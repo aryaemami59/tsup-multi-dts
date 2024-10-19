@@ -1,0 +1,29 @@
+{
+  "name": "my-lib-good",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [],
+  "sideEffects": false,
+  "exports": {
+    "./foo": {
+      "types": "./dist/foo.d.ts",
+      "import": "./dist/foo.js"
+    },
+    "./bar": {
+      "types": "./dist/bar.d.ts",
+      "import": "./dist/bar.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup"
+  },
+  "devDependencies": {
+    "@microsoft/api-extractor": "^7.47.11",
+    "tsup": "^8.3.0",
+    "typescript": "^5.6.2"
+  }
+}
