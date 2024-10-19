@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "my-lib-good": "workspace:*",
+    "my-lib-bad": "workspace:*",
     "typescript": "^5.6.2"
   }
 }
